@@ -1,0 +1,54 @@
+/*Colores*/
+:root {
+    --white: #ffffff;
+    --primary: #ffc107;
+    --secondary: #0097a7;
+    --gray: #757575;
+    --dark: #212121;
+  }
+
+/*Imagen Logo Principal*/
+
+.img_principal{
+    height: 13em;
+    width: 100%;
+}
+.img_principal img{
+    height: 24em;
+    width: 100%;
+}
+
+
+/*Menu*/
+
+.header{
+    padding-top: 4.5em;
+}
+.header nav {
+    padding: 1em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .header nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .header nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  .header nav a:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    .header nav a {
+      margin-bottom: 0;
+    }
+  }
